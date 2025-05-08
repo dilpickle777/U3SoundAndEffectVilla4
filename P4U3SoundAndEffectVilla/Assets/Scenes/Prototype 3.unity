@@ -415,6 +415,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &563612636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 563612638}
+  - component: {fileID: 563612637}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &563612637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563612636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e66b71c10748834b815236f43860a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+--- !u!4 &563612638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563612636}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -31.351252, y: -8.051535, z: 56.820236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &709895859 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4673319927101915457, guid: c31181c06d9197a45917a3c12043f460, type: 3}
@@ -808,6 +853,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe5d0c26304ae940a3833393d5095c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstaclePrefabs:
+  - {fileID: 4389860156226214351, guid: 2d72d6045ef055c419c41ff381dab628, type: 3}
+  - {fileID: 6782186723890631569, guid: 26d0eb2ff4dce68498dc1f71d41f0ffb, type: 3}
+  - {fileID: 1893424564544795605, guid: bdcaed2b30b4e1c488bdb064f1b1d29b, type: 3}
   obstaclePrefab: {fileID: 8910535663056850711, guid: f01cad349a04302499966945dfecf57c, type: 3}
 --- !u!4 &1306172568
 Transform:
@@ -1040,6 +1089,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1385038766}
     - target: {fileID: 7625399160698799872, guid: c31181c06d9197a45917a3c12043f460, type: 3}
+      propertyPath: doubleJumpForce
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625399160698799872, guid: c31181c06d9197a45917a3c12043f460, type: 3}
       propertyPath: explosionParticle
       value: 
       objectReference: {fileID: 177122279}
@@ -1067,3 +1120,4 @@ SceneRoots:
   - {fileID: 835818921}
   - {fileID: 4660053869435189844}
   - {fileID: 1306172568}
+  - {fileID: 563612638}
